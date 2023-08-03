@@ -1,6 +1,17 @@
 /* home */
 
+:root {
+  --lemon: #EFDF80;
+  --light-blue: #C0DCDC;
+  --light-blue-2: #C2DEE5;
+  --moss-green: #949A58;
+  --olivine: #94B485;
 
+}
+
+::selection {
+  background: var(--light-blue)
+}
 
 body {
   margin: 0;
@@ -25,8 +36,9 @@ body {
   -webkit-box-align: center;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
-  height: 100vh;
+  /* min-height: 100vh; */
+  /* height: 100vh; */
+    height: calc(100vh - 80px);
   /* padding: 0px; */
   padding: 15px;
 }
@@ -61,24 +73,39 @@ body {
   display: flex;
   list-style: none;
 }
-
+.navbar-list li {
+  margin: 0 6px;
+}
+.navbar-list li a{
+  text-decoration: none;
+  color: black;
+}
+.navbar-list li a:hover {
+  color: #C2DEE5;
+}
 .container-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+/* https: //coolors.co/949a58-c2dee5-c0dcdc-efdf80-94b485  color palette*/
 .cta-button {
   font-size: 12px;
-  background-color: purple;
+  background-color: var(--lemon);
   border-radius:50px;
   padding: 5px 10px;
-  color: white;
-  /* text-transform: ; */
+  border: 1px solid black;
+  width: 130px;
+  text-align: center;
 }
+/* https: //alvarotrigo.com/blog/css-highlight-text/ highlight ideas */
 
 .cta-button:hover {
-  background-color:yellow
+  background-color:#C2DEE5;
+}
+
+.intro-highlight {
+  background-color: var(--lemon)
 }
 
 .navbar-list {
