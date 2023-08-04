@@ -6,8 +6,6 @@ export default function Home() {
   return (
     <div className='home-container'>
       <HeroSection />
-      {/* <AboutMe /> */}
-      {/* <PortfolioSection /> */}
     </div >
 
   )

@@ -1,0 +1,89 @@
+.home-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-container {
+    height: 100vh;
+    /* background-color: var(--purple); */
+}
+
+/* .hero-row {
+    display: flex;
+} */
+
+.hero {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    /* min-height: 100vh; */
+    /* height: 100vh; */
+    height: calc(100vh - 80px);
+    /* padding: 0px; */
+    padding: 15px;
+}
+
+.header-section {
+    /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+    padding: 10px 20px;
+}
+.container-head {
+    /* list-style: none; */
+    /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.cta-button {
+    font-size: 12px;
+    background-color: var(--lemon);
+    border-radius: 50px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.cta-button:hover {
+    background-color: #C2DEE5;
+}
+
+.intro-highlight {
+    background-color: var(--lemon)
+}
+
+.navbar-list {
+    margin: 0;
+}
+
+/* https: //coolors.co/949a58-c2dee5-c0dcdc-efdf80-94b485  color palette*/
+/* https: //redstapler.co/curved-custom-shape-div-css-svg/ */
+/* portfolio grid example: https: //www.codeflows.dev/#pricing */
+/* https: //alvarotrigo.com/blog/css-highlight-text/ highlight ideas */
+
+.active {
+    display: block;
+}
+
+/* media query - navbar -list style */
+@media screen and (min-width: 600px) {}
+
+.navbar-list li {
+    margin: 0 6px;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-list li a:hover {
+    color: #C2DEE5;
+}
