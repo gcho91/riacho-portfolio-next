@@ -87,3 +87,13 @@
 .navbar-list li a:hover {
     color: #C2DEE5;
 }
+
+.social-row {
+    display: flex;
+    padding: 15px;
+}
+
+.social-row img {
+    margin-right: 10px;
+}
+
