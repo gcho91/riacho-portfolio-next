@@ -1,4 +1,4 @@
-import { ibmPlexSansCond } from "../pages/utils/fonts"
+import { ibmPlexSansCond } from "../utils/fonts"
 import menu from "../public/menu.png";
 import Image from 'next/image'
 import { useState } from "react";
