@@ -1,37 +1,16 @@
 import { ibmPlexSansCond } from "../utils/fonts"
-import menu from "../public/menu.png";
 import Image from 'next/image'
-import { useState } from "react";
 import heroStyles from "../styles/heroSectionStyles.module.css"
 import twitterIcon from "../public/twitter-icon.svg";
 import linkedinIcon from "../public/linkedin-icon.svg";
 import githubIcon from "../public/github-icon.svg";
 import Navbar from "./Navbar";
 
-
-
-
 export default function HeroSection() {
 
-    const [open, SetOpen] = useState(false);
-    const activeClass = open ? heroStyles.active : "";
-
-    const onClickBurger = () => {
-        console.log('clicked on burger')
-        SetOpen(!open);
-        // add active to container-head
-        // on hamburger click, add active class to navbar-list class
-    }
-    return (<main className={heroStyles["hero-container"]}>
-        <Navbar />
-
-
-
-
+    return (<div className={heroStyles["hero-container"]}>
         <div className={heroStyles.hero}>
-            {/* <h1 className={ibmPlexSansCond.className} style={{ margin: 0 }}>Hello, my name is
-                Ria Cho. </h1> */}
-            {/* <h1 className={ibmPlexSansCond.className}> Ria Cho</h1> */}
+
             <h1 className={`${ibmPlexSansCond.className} ${heroStyles.name}`}>Ria Cho</h1>
 
             <h2>I build things for the <span className="intro-highlight">web</span> and <span className="intro-highlight">	mobile </span></h2>
@@ -59,6 +38,6 @@ export default function HeroSection() {
                     width={15} />
             </a>
         </div>
-    </main>
+    </div>
     )
 }

@@ -1,16 +1,7 @@
-.home-container {
-    max-width: 700px;
-    margin: 0 auto;
-}
 
 .hero-container {
     height: 100vh;
-    /* background-color: var(--purple); */
 }
-
-/* .hero-row {
-    display: flex;
-} */
 
 .hero {
     display: flex;
@@ -42,11 +33,11 @@
     background-color: var(--lemon);
     border-radius: 50px;
     padding: 5px 10px;
-    border: 1px solid black;
+    border: 1px solid var(--off-black);
     width: 130px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: var(--off-black);
 }
 
 .cta-button:hover {
@@ -73,7 +64,7 @@
 
 .navbar-list li a {
     text-decoration: none;
-    color: black;
+    color: var(--off-black);
 }
 
 .navbar-list li a:hover {
@@ -95,6 +86,7 @@
 
 
 /* https: //coolors.co/949a58-c2dee5-c0dcdc-efdf80-94b485  color palette*/
+/* https: //coolors.co/c1dbe3-c7dfc5-f6feaa-fce694-373737 */
 /* https: //redstapler.co/curved-custom-shape-div-css-svg/ */
 /* portfolio grid example: https: //www.codeflows.dev/#pricing */
 /* https: //alvarotrigo.com/blog/css-highlight-text/ highlight ideas */

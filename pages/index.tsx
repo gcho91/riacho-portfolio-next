@@ -1,14 +1,11 @@
 import HeroSection from '../components/HeroSection'
+import Portfolio from './work'
 
 export default function Home() {
   return (
     <>
-      <div className='home-container'>
-        <HeroSection />
-      </div >
-      {/* <div>
-        <h1>hello world</h1>
-      </div> */}
+      <HeroSection />
+      <Portfolio />
     </>
 
   )
