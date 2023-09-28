@@ -7,8 +7,8 @@ const ibmPlexSans = IBM_Plex_Sans({
 
 type LayoutProps = {
     children: React.ReactNode;
-
 }
+
 export default function Layout({ children }: LayoutProps) {
     return (
         <div className={ibmPlexSans.className}>

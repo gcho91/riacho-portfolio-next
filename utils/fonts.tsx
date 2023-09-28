@@ -9,10 +9,4 @@ export const ibmPlexSans = IBM_Plex_Sans({
 export const ibmPlexSansCond = IBM_Plex_Sans_Condensed({
     weight: '600',
     subsets: ['latin']
-})
-
-
-console.log(ibmPlexSans)
-
-
-// https://blog.logrocket.com/next-js-font-optimization-custom-google-fonts/#adding-google-fonts-next-font
+});
