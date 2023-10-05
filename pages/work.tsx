@@ -4,8 +4,9 @@ import amaltheaMock from "../public/amalthea-mock.png"
 import workStyles from "../styles/workStyles.module.css"
 import gmarketMock from "../public/gmarket-mock.png"
 import lynnsMock from "../public/lynns-mock.png"
+import Card from '@/components/Card'
 
-interface PortfolioItem {
+export interface PortfolioItem {
     imageUrl: StaticImageData
     title: string;
     desc: string;
@@ -39,9 +40,7 @@ export default function Portfolio() {
 
 
         <div className={workStyles.portfolioContainer}>
-
-
-            {portfolioItems.map(item => {
+            {/* {portfolioItems.map(item => {
                 return (
                     <div key={item.desc} className={workStyles.item} style={{ backgroundImage: `url(${item.imageUrl.src})` }}>
                         <div className={workStyles.textWrapper}>
@@ -49,34 +48,15 @@ export default function Portfolio() {
                             <p className={workStyles.desc}>{item.desc}</p>
                         </div>
                     </div>
-                    // </div>
                 )
+            })} */}
 
+            {portfolioItems.map(item => {
+                return (
+                    <Card key={item.desc} imageUrl={item.imageUrl}
+                        item={item} />
+                )
             })}
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
-
-
 }
-
-
-
-// items to add
-// fermat
-// ecommerce app
-// nyc supper club
-//random quote generator
-// amalthea
