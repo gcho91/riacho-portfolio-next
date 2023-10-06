@@ -10,50 +10,45 @@ export interface PortfolioItem {
     imageUrl: StaticImageData
     title: string;
     desc: string;
+    tags?: Tags[]
 }
+
+type Tags = "React" | "React-Native" | "HTML/CSS" | "TypeScript" | "WordPress" | "Squarespace" | "Angular" | "PostgreSQL"
 
 const portfolioItems: PortfolioItem[] = [
     {
         imageUrl: fermatMock,
-        title: "Fermat Commerce - Mobile App",
-        desc: "React-Native mobile app for setting up distributed e-commerce shops for the influencer customers. Released to App Store in 2022."
+        title: "Fermat Commerce – Mobile App",
+        desc: "React-Native mobile app for setting up distributed e-commerce shops for the influencer customers. Released to App Store in 2022.",
+        tags: ["React-Native", "HTML/CSS", "TypeScript"]
     },
     {
         imageUrl: amaltheaMock,
         title: "Amalthea Coffee",
-        desc: "A Squarespace-based coffee online ordering and subscription service."
+        desc: "A Squarespace-based coffee online ordering and subscription service.",
+        tags: ["HTML/CSS", "Squarespace"]
     },
     {
         imageUrl: gmarketMock,
-        title: "gMarket - e-commerce application",
-        desc: "A mock e-commerce project using Angular and PostgreSQL."
+        title: "GMarket – e-commerce application",
+        desc: "A mock e-commerce project using Angular and PostgreSQL.",
+        tags: ["HTML/CSS", "Angular", "PostgreSQL"]
     },
     {
         imageUrl: lynnsMock,
         title: "Lynn's NYC Supper Club",
-        desc: "Client work for small NYC-based boutique supper club experience."
+        desc: "Client work for small NYC-based boutique supper club experience.",
+        tags: ["HTML/CSS", "WordPress"]
     }
 ]
 export default function Portfolio() {
     return <div>
         <h2 className={workStyles.pageTitle}>Projects</h2>
-
-
         <div className={workStyles.portfolioContainer}>
-            {/* {portfolioItems.map(item => {
-                return (
-                    <div key={item.desc} className={workStyles.item} style={{ backgroundImage: `url(${item.imageUrl.src})` }}>
-                        <div className={workStyles.textWrapper}>
-                            <h2 className={workStyles.title}>{item.title}</h2>
-                            <p className={workStyles.desc}>{item.desc}</p>
-                        </div>
-                    </div>
-                )
-            })} */}
 
             {portfolioItems.map(item => {
                 return (
-                    <Card key={item.desc} imageUrl={item.imageUrl}
+                    <Card key={item.desc}
                         item={item} />
                 )
             })}
