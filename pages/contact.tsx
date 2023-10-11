@@ -1,7 +1,7 @@
 import contactStyles from "../styles/contactStyles.module.css"
 
 export default function Contact() {
-    return <div className={contactStyles.container}>
+    return <div className={contactStyles.container} id="contact_section">
         <h2 className={contactStyles.pageTitle}>Contact Me</h2>
         <div className={contactStyles.textContainer}>
             <p>I am currently looking for new opportunities! </p>
@@ -9,6 +9,3 @@ export default function Contact() {
         </div>
     </div>
 }
-
-
-// to do: make button component

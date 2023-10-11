@@ -48,7 +48,7 @@ const portfolioItems: PortfolioItem[] = [
     }
 ]
 export default function Portfolio() {
-    return <div>
+    return <div id="work">
         <h2 className={workStyles.pageTitle}>Projects</h2>
         <div className={workStyles.portfolioContainer}>
 

@@ -9,11 +9,10 @@ export default function Navbar() {
                 <Link href="/" className={navbarStyles.linktext}>Home</Link>
             </li>
             <li>
-                <Link href="/work" className={navbarStyles.linktext}>Work</Link>
+                <Link href="#work" className={navbarStyles.linktext}>Work</Link>
             </li>
             <li>
-                <a href="" className={navbarStyles.linktext}>Contact</a>
-
+                <a href="#contact_section" className={navbarStyles.linktext}>Contact</a>
             </li>
         </ul>
     </nav>
