@@ -3,6 +3,14 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+
+    /* position: relative;
+    top: 0;
+    transition: top ease 0.5s; */
+}
+
+.container:hover {
+    /* top: -8px; */
 }
 
 .image {
@@ -11,12 +19,20 @@
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 
+         position: relative;
+            top: 0;
+            transition: top ease 0.5s;
+
+}
+
+.image:hover {
+    top: -8px;
 }
 
 .cardDetails {
     padding: 10px;
     margin: 0 auto;
-    flex-grow: 1;
+    flex: 1 0 auto;
 }
 
 .iconsContainer {
@@ -28,5 +44,9 @@
 
 .tagContainer {
     display: flex;
-    flex-wrap: wrap;
+}
+
+.cardh1{ 
+    margin:0;
+    min-height: 62px;
 }

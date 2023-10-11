@@ -13,7 +13,9 @@ interface CardProps {
 export default function Card(props: CardProps) {
     const { item } = props;
     return <div className={styles.container}>
-        <img className={styles.image} src={item.imageUrl.src} alt="Lago di Braies" />
+        <div className={styles.image} style={{ position: "relative" }}>
+            <Image src={item.imageUrl.src} className={styles.image} alt="Picture of web/mobile app" fill />
+        </div>
 
         <div className={styles.cardDetails}>
             <div className={styles.tagContainer}>
@@ -21,19 +23,27 @@ export default function Card(props: CardProps) {
                     return (<Tag key={i}>{tag}</Tag>)
                 })}
             </div>
-            <h2>{item.title}</h2>
-            <p>{item.desc}</p>
-
+            <h2 className={styles.cardh1}>{item.title}</h2>
+            <p className={styles.p}>{item.desc}</p>
         </div>
-        <div className={styles.iconsContainer}>
-            <Image priority src={githubIcon} alt="Follow me on Github"
-                height={15}
-                width={15} />
-            <Image priority src={linkIcon} alt="link to project"
-                height={20}
-                width={20} />
-
-        </div>
+        {(item.github || item.link) &&
+            <div className={styles.iconsContainer}>
+                {item.github &&
+                    <a href={item.github} target="_blank">
+                        <Image priority src={githubIcon} alt="Follow me on Github"
+                            height={20}
+                            width={20} />
+                    </a>
+                }
+                {item.link &&
+                    <a href={item.link} target="_blank">
+                        <Image priority src={linkIcon} alt="link to project"
+                            height={25}
+                            width={25} />
+                    </a>
+                }
+            </div>
+        }
 
     </div>
 }
