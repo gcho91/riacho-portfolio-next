@@ -6,6 +6,7 @@ import Tag from "./Tag"
 import githubIcon from "../public/github-icon.svg"
 import Image from "next/image"
 import linkIcon from "../public/link-icon.svg";
+import { cormorantGaramond } from "@/utils/fonts"
 interface CardProps {
     item: PortfolioItem;
 }
@@ -23,7 +24,7 @@ export default function Card(props: CardProps) {
                     return (<Tag key={i}>{tag}</Tag>)
                 })}
             </div>
-            <h2 className={styles.cardh1}>{item.title}</h2>
+            <h2 className={`styles.cardh1 ${cormorantGaramond.className}`}>{item.title}</h2>
             <p className={styles.p}>{item.desc}</p>
         </div>
         {(item.github || item.link) &&

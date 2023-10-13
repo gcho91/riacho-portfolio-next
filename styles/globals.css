@@ -19,3 +19,6 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: var(--cormorant-garamond), serif;
+}

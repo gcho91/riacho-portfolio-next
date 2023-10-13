@@ -1,9 +1,8 @@
 import Navbar from "@/components/Navbar";
-import { IBM_Plex_Sans } from 'next/font/google'
-const ibmPlexSans = IBM_Plex_Sans({
-    weight: '400',
-    subsets: ['latin']
-})
+import { raleway, arimo, cormorantGaramond } from "@/utils/fonts";
+import { IBM_Plex_Sans, Cormorant_Garamond } from 'next/font/google'
+
+
 
 type LayoutProps = {
     children: React.ReactNode;
@@ -11,7 +10,7 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
     return (
-        <div className={ibmPlexSans.className}>
+        <div className={cormorantGaramond.className}>
             <Navbar />
             <main>{children}</main>
         </div>

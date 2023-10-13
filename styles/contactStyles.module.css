@@ -4,6 +4,7 @@
 
 .pageTitle {
     text-align: center;
+    font-family: var(--cormorant-garamond);
 }
 
 .textContainer {
