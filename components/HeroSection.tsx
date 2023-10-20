@@ -18,20 +18,23 @@ export default function HeroSection() {
             <a href="mailto:gcho91@gmail.com" className={`${heroStyles['cta-button']}`}>Contact me</a>
         </div>
         <div className={heroStyles["social-row"]}>
-            <a href="https://www.twitter.com/espresscho">
-                <Image priority src={twitterIcon} alt="Follow me on twitter"
-                    height={15}
-                    width={15} />
-            </a>
             <a href="https://www.linkedin.com/in/gloriacho1">
                 <Image priority src={linkedinIcon} alt="Follow me on LinkedIn"
-                    height={15}
-                    width={15} />
+                    height={20}
+                    width={20} />
+            </a>
+            <a href="https://www.twitter.com/espresscho">
+                <Image priority src={twitterIcon} alt="Follow me on Twitter"
+                    height={20}
+                    width={20} />
             </a>
             <a href="https://www.github.com/gcho91">
-                <Image priority src={githubIcon} alt="Follow me on Github"
-                    height={15}
-                    width={15} />
+                <Image
+                    src="/github-mark.svg"
+                    alt="GITHUB icon"
+                    width={20}
+                    height={20}
+                />
             </a>
         </div>
     </div>

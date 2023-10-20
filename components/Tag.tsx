@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import tagStyles from "../styles/tagStyles.module.css"
-import { IBM_Plex_Sans, Cormorant_Garamond, Raleway, Arimo, Inter } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
 const inter = Inter({
     subsets: ['latin']

@@ -2,8 +2,8 @@
     background-color: var(--light-blue);
     color: var(--off-black);
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 0.75em;
     border-radius: 20px;
     margin-right: 5px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }

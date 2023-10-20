@@ -39,7 +39,6 @@
 }
 
 .cta-button {
-    /* font-size: 12px; */
     font-size: 1em;
     background-color: var(--lemon);
     border-radius: 50px;
@@ -62,7 +61,6 @@
 .navbar-list {
     margin: 0;
 }
-
 
 .active {
     display: block;
@@ -89,10 +87,7 @@
 .social-row {
     display: flex;
     justify-content: center;
-}
-
-.social-row img {
-    margin-right: 10px;
+    gap: 10px;
 }
 
 

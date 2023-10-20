@@ -5,17 +5,19 @@
 .pageTitle {
     text-align: center;
     font-family: var(--cormorant-garamond);
+    font-size: 2em;
 }
 
 .textContainer {
     max-width: 600px;
     text-align: center;
     margin: 0 auto;
+    font-size: 1.5em;
 }
 
 .button {
     display: block;
-    font-size: 12px;
+    font-size: 1em;
     background-color: var(--lemon);
     border-radius: 50px;
     padding: 5px 10px;
@@ -29,5 +31,19 @@
      /* margin-top: 0;
      margin-bottom: 20px; */
      margin: 0 auto 20px auto;
+}
 
+.ctaButton {
+    display: block;
+    margin: 45px auto;
+    /* font-size: 1em; */
+    font-size: 12px;
+    background-color: var(--lemon);
+    border-radius: 50px;
+    padding: 5px 10px;
+    border: 1px solid var(--off-black);
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--off-black);
 }
