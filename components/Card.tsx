@@ -24,7 +24,7 @@ export default function Card(props: CardProps) {
                     return (<Tag key={i}>{tag}</Tag>)
                 })}
             </div>
-            <h2 className={`styles.cardh1 ${cormorantGaramond.className}`}>{item.title}</h2>
+            <h2 className={`${styles.cardh2} ${cormorantGaramond.className}`}>{item.title}</h2>
             <p className={styles.p}>{item.desc}</p>
         </div>
         {(item.github || item.link) &&

@@ -1,4 +1,4 @@
-import { IBM_Plex_Sans, Cormorant_Garamond, Raleway, Arimo, Inter } from 'next/font/google'
+import { IBM_Plex_Sans, Cormorant_Garamond, Raleway, Arimo, Inter, DM_Sans, DM_Serif_Display } from 'next/font/google'
 import { IBM_Plex_Sans_Condensed } from 'next/font/google'
 
 export const ibmPlexSans = IBM_Plex_Sans({
@@ -27,3 +27,11 @@ export const arimo = Arimo({
     weight: 'variable',
     subsets: ['latin']
 });
+
+export const dmSans = DM_Sans({
+    weight: ['400', '700'],
+
+    subsets: ['latin']
+
+
+})

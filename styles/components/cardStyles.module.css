@@ -1,18 +1,21 @@
 .container {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     /* border-radius: 0px; */
     display: flex;
     flex-direction: column;
 
-    /* position: relative;
-    top: 0;
-    transition: top ease 0.5s; */
-    border-radius: 0px;
-    
-        -moz-transition: all .51s;
-        -o-transition: all .51s;
-        -webkit-transition: all .51s;
-        transition: all .51s;
+
+    box-shadow: 16px 18px -6px rgba(0, 0, 0, .08);
+    -webkit-box-shadow: 1px 16px 18px -6px rgba(0, 0, 0, .08);
+
+    /* border-radius: 0px;
+    -moz-transition: all .51s;
+    -o-transition: all .51s;
+    -webkit-transition: all .51s;
+    transition: all .51s; */
+
+    transition: all .2s ease-in-out;
+
 }
 
 .container:hover {
@@ -20,7 +23,10 @@
     /* border-radius: 20px; */
     /* transition: all .4s cubic-bezier(.15, .85, .45, 1);
         -webkit-transition-property: none; */
-        border-radius: 20px;
+    /* border-radius: 20px; */
+
+    transform: scale(1.02);
+
 }
 
 .image {
@@ -29,21 +35,20 @@
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 
-        position: relative;
-        top: 0;
-        /* border-radius: 20px; */
-        transition: top ease 0.5s;
+    position: relative;
+    top: 0;
+    /* border-radius: 20px; */
+    /* transition: top ease 0.5s; */
 
 }
 
 .image:hover {
-    top: -8px;
+    /* top: -8px; */
     /* border-radius: 0px; */
 }
 
 .cardDetails {
-    padding: 10px;
-    margin: 0 auto;
+    padding: 20px;
     flex: 1 0 auto;
 }
 
@@ -56,9 +61,11 @@
 
 .tagContainer {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.cardh1{ 
-    margin:0;
-    min-height: 62px;
+.cardh2 {
+    margin: 0;
+    /* min-height: 62px; */
+    /* font-size: 1.75em; */
 }

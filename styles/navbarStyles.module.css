@@ -1,5 +1,6 @@
 .nav {
     padding: 1rem 0;
+    /* font-size: 1.15em; */
 }
 .ul-list {
 
@@ -13,7 +14,10 @@
     list-style-type: none;
     display: inline-block;
     margin-left: 3rem;
+}
 
+.ul-list li a{ 
+    font-size: 1.1em;
 }
 
 @media screen and (max-width: 600px) {

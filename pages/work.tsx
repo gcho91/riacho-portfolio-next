@@ -5,6 +5,7 @@ import workStyles from "../styles/workStyles.module.css"
 import gmarketMock from "../public/gmarket-mock.png"
 import lynnsMock from "../public/lynns-mock.png"
 import Card from '@/components/Card'
+import { } from "@/utils/fonts"
 
 export interface PortfolioItem {
     imageUrl: StaticImageData
