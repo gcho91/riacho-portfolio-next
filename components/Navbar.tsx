@@ -1,12 +1,6 @@
 import navbarStyles from "../styles/navbarStyles.module.css"
 import Link from 'next/link';
-import { ibmPlexSansCond, cormorantGaramond, raleway, dmSans } from "../utils/fonts"
-import { Inter } from 'next/font/google'
-
-
-const inter = Inter({
-    subsets: ['latin']
-});
+import { cormorantGaramond, dmSans } from '@/utils/fonts';
 
 export default function Navbar() {
     return <nav className={`${navbarStyles.nav} ${dmSans.className}`}>

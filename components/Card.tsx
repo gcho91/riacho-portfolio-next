@@ -1,12 +1,10 @@
 import { StaticImageData } from "next/image"
 import styles from "../styles/components/cardStyles.module.css"
 import { PortfolioItem } from "@/pages/work"
-import Button from "./Button"
 import Tag from "./Tag"
-import githubIcon from "../public/github-icon.svg"
 import Image from "next/image"
-import linkIcon from "../public/link-icon.svg";
 import { cormorantGaramond } from "@/utils/fonts"
+
 interface CardProps {
     item: PortfolioItem;
 }
@@ -29,18 +27,14 @@ export default function Card(props: CardProps) {
         </div>
         {(item.github || item.link) &&
             <div className={styles.iconsContainer}>
-                {item.github &&
+                {/* {item.github &&
                     <a href={item.github} target="_blank">
-                        <Image priority src={githubIcon} alt="Follow me on Github"
-                            height={20}
-                            width={20} />
+
                     </a>
-                }
+                } */}
                 {item.link &&
                     <a href={item.link} target="_blank">
-                        <Image priority src={linkIcon} alt="link to project"
-                            height={25}
-                            width={25} />
+
                     </a>
                 }
             </div>

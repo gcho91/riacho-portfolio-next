@@ -18,20 +18,9 @@ export const cormorantGaramond = Cormorant_Garamond({
     variable: "--cormorant-garamond"
 })
 
-export const raleway = Raleway({
-    weight: '400',
-    subsets: ['latin']
-})
 
-export const arimo = Arimo({
-    weight: 'variable',
-    subsets: ['latin']
-});
 
 export const dmSans = DM_Sans({
     weight: ['400', '700'],
-
     subsets: ['latin']
-
-
 })
