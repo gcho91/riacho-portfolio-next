@@ -43,21 +43,7 @@
     margin: 0;
 }
 
-.cta-button {
-    font-size: 1em;
-    background-color: var(--lemon);
-    border-radius: 50px;
-    padding: 5px 10px;
-    border: 1px solid var(--off-black);
-    width: 130px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--off-black);
-}
 
-.cta-button:hover {
-    background-color: #C2DEE5;
-}
 
 .intro-highlight {
     background-color: var(--lemon)
