@@ -22,6 +22,7 @@ export default function AboutMe() {
                 <p>Currently excited about:</p>
                 <ul>
                     <li>Mobile Native Development (Swift, Objective-C)</li>
+                    <li>Contributing to Open Source</li>
                     <li>UX Research & Design</li>
                 </ul>
             </div>
