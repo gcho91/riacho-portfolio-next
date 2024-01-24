@@ -18,9 +18,12 @@ export const cormorantGaramond = Cormorant_Garamond({
     variable: "--cormorant-garamond"
 })
 
-
-
 export const dmSans = DM_Sans({
     weight: ['400', '700'],
     subsets: ['latin']
+})
+
+export const inter = Inter({
+    subsets: ['latin'],
+    variable: "--inter"
 })
