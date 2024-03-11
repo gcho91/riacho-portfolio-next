@@ -4,6 +4,7 @@ import amaltheaMock from "../public/amalthea-mock.png"
 import workStyles from "../styles/workStyles.module.css"
 import gmarketMock from "../public/gmarket-mock.png"
 import lynnsMock from "../public/lynns-mock.png"
+import wrexxmock from "../public/wrexx-mockup-s.png"
 import Card from '@/components/Card'
 import { } from "@/utils/fonts"
 
@@ -16,7 +17,7 @@ export interface PortfolioItem {
     link?: string;
 }
 
-type Tags = "React" | "React-Native" | "HTML/CSS" | "TypeScript" | "WordPress" | "Squarespace" | "Angular" | "PostgreSQL"
+type Tags = "React" | "React-Native" | "HTML/CSS" | "TypeScript" | "WordPress" | "Squarespace" | "Angular" | "PostgreSQL" | "Design" | "Figma"
 
 const portfolioItems: PortfolioItem[] = [
     {
@@ -46,7 +47,15 @@ const portfolioItems: PortfolioItem[] = [
         desc: "Client work for small NYC-based boutique supper club experience.",
         tags: ["HTML/CSS", "WordPress"],
         link: "https://lynnsnycsupperclub.com/"
-    }
+    },
+    {
+        imageUrl: wrexxmock,
+        title: "Wrexx Dance - iOS App Design Mockup",
+        desc: "A reimagined Figma mockup and live prototype of Moment Fitness Client App, a white-label application for fitness and dance studios. ",
+        tags: ["Design", "Figma"],
+        link: "https://lynnsnycsupperclub.com/"
+    },
+
 ]
 export default function Portfolio() {
     return <div id="work">
