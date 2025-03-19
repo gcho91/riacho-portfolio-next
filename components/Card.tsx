@@ -12,6 +12,8 @@ interface CardProps {
 export default function Card(props: CardProps) {
     const { item } = props;
     return <div className={styles.container}>
+
+
         <div className={styles.image} style={{ position: "relative" }}>
             <Image src={item.imageUrl.src} className={styles.image} alt="Picture of web/mobile app" fill />
         </div>
@@ -24,17 +26,19 @@ export default function Card(props: CardProps) {
             </div>
             <h2 className={`${styles.cardh2} ${cormorantGaramond.className}`}>{item.title}</h2>
             <p className={styles.p}>{item.desc}</p>
+
+            <div className={styles.linksButtonsContainer}>
+
+                <a href="" className={styles.projectLink} target="_blank">Live Project</a>
+                <a href="" className={styles.projectLink} target="_blank">Github</a>
+
+            </div>
         </div>
+
         {(item.github || item.link) &&
             <div className={styles.iconsContainer}>
-                {/* {item.github &&
-                    <a href={item.github} target="_blank">
-
-                    </a>
-                } */}
                 {item.link &&
                     <a href={item.link} target="_blank">
-
                     </a>
                 }
             </div>

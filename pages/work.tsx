@@ -53,7 +53,6 @@ const portfolioItems: PortfolioItem[] = [
         title: "Wrexx Dance - iOS App Design Mockup",
         desc: "A reimagined Figma mockup and live prototype of Moment Fitness Client App, a white-label application for fitness and dance studios. ",
         tags: ["Design", "Figma"],
-        link: "https://lynnsnycsupperclub.com/"
     },
 
 ]
