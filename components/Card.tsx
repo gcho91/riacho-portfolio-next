@@ -4,6 +4,7 @@ import { PortfolioItem } from "@/pages/work"
 import Tag from "./Tag"
 import Image from "next/image"
 import { cormorantGaramond } from "@/utils/fonts"
+import SvgIcon from "./SvgIcon"
 
 interface CardProps {
     item: PortfolioItem;
@@ -25,20 +26,33 @@ export default function Card(props: CardProps) {
             <h2 className={`${styles.cardh2} ${cormorantGaramond.className}`}>{item.title}</h2>
             <p className={styles.p}>{item.desc}</p>
         </div>
-        {(item.github || item.link) &&
-            <div className={styles.iconsContainer}>
-                {/* {item.github &&
-                    <a href={item.github} target="_blank">
 
-                    </a>
-                } */}
-                {item.link &&
-                    <a href={item.link} target="_blank">
+        <div className={styles.iconsContainer}>
+            {item.links?.github && (
+                <a
+                    href={item.links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub repository"
+                    style={{ display: "inline-flex", alignItems: "center", gap: "0.5em" }}
+                >
+                    <SvgIcon src="/github-icon.svg" height={30} width={30} alt="GitHub icon" />
+                </a>
+            )}
+            {item.links?.live_project && (
+                <a
+                    href={item.links.live_project}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Live project"
+                    style={{ display: "inline-flex", alignItems: "center", gap: "0.5em" }}
+                >
+                    <SvgIcon src="/link-icon.svg" height={30} width={30} alt="Live project icon" />
+                </a>
+            )}
 
-                    </a>
-                }
-            </div>
-        }
+        </div>
+
 
     </div>
 }
