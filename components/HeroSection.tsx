@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className={heroStyles.hero}>
             <h1 className={[...classes, heroStyles.name, heroStyles.delay1].join(" ")}>Ria Cho</h1>
             <h2 className={[...classes, heroStyles.subtext, heroStyles.delay2].join(" ")}>I build things for the <span className="intro-highlight">web</span> and <span className="intro-highlight">	mobile </span></h2>
-            <p className={[...classes, heroStyles.description, heroStyles.delay3].join(" ")}>I am a front-end engineer who loves building products with great UX, and is obsessed with high end-user empathy and usability. I am currently based in San Francisco.</p>
+            <p className={[...classes, heroStyles.description, heroStyles.delay3].join(" ")}>I am a front-end engineer who loves building products with great UX, and is obsessed with high end-user empathy and usability. I am currently based in New Jersey and seeking opportunities in the NYC metropolitan area.</p>
             <div className={[...classes, heroStyles.delay4].join(" ")}>
                 <LinkButton linkText="Contact Me" url="gcho91@gmail.com" />
             </div>
