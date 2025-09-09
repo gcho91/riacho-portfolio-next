@@ -19,13 +19,13 @@ export default function HeroSection() {
         </div>
         <div className={heroStyles["social-row"]}>
             <a href="https://www.linkedin.com/in/gloriacho1">
-                <FontAwesomeIcon icon={faLinkedin} className={`${heroStyles['icon']} fa-lg}`} />
+                <FontAwesomeIcon icon={faLinkedin} className={`${heroStyles['icon']} fa-lg`} />
             </a>
             <a href="https://www.github.com/gcho91">
-                <FontAwesomeIcon icon={faGithub} className={`${heroStyles['icon']} fa-lg}`} />
+                <FontAwesomeIcon icon={faGithub} className={`${heroStyles['icon']} fa-lg`} />
             </a>
             <a href="https://www.twitter.com/espresscho">
-                <FontAwesomeIcon icon={faTwitter} className={`${heroStyles['icon']} fa-lg}`} />
+                <FontAwesomeIcon icon={faTwitter} className={`${heroStyles['icon']} fa-lg`} />
             </a>
 
         </div>
