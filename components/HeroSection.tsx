@@ -7,25 +7,23 @@ import Button from "./Button";
 import image from "../public/fermat portrait.png"
 
 export default function HeroSection() {
-    const classes = [heroStyles.animate, heroStyles.glow];
-
     return (
         <div className={heroStyles["hero-container"]}>
             <div className={heroStyles["hero-content"]}>
                 <div className={heroStyles["hero-text"]}>
-                    <h1 className={[...classes, heroStyles.greeting, heroStyles.delay1].join(" ")}>
+                    <h1 className={heroStyles.greeting}>
                         Hello, I&apos;m Ria Cho,
                     </h1>
-                    <h1 className={[...classes, heroStyles.profession, heroStyles.delay2].join(" ")}>
+                    <h1 className={heroStyles.profession}>
                         Software Engineer
                     </h1>
-                    <h1 className={[...classes, heroStyles.location, heroStyles.delay2].join(" ")}>
+                    <h1 className={heroStyles.location}>
                         based in the USA.
                     </h1>
-                    <p className={[...classes, heroStyles.description, heroStyles.delay3].join(" ")}>
+                    <p className={heroStyles.description}>
                         I am a front-end software engineer crafting user-centered products with high empathy and usability.
                     </p>
-                    <div className={[...classes, heroStyles["button-group"], heroStyles.delay4].join(" ")}>
+                    <div className={heroStyles["button-group"]}>
                         <button className={heroStyles["contact-button"]}>CONTACT ME</button>
                         <button className={heroStyles["work-button"]}>VIEW MY WORK</button>
                     </div>
@@ -35,7 +33,6 @@ export default function HeroSection() {
                         {/* Placeholder for profile image - you can replace this with your actual image */}
                         <div className={heroStyles["profile-placeholder"]}>
                             <span>Profile Image</span>
-                            {/* <img src="../public/fermat-portrait.png"></img> */}
                         </div>
                     </div>
                 </div>
