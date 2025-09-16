@@ -3,8 +3,8 @@ import Image from "next/image";
 
 interface SvgIconProps {
     src: string; // path to svg in public folder, e.g. "/github-icon.svg"
-    height?: number | string;
-    width?: number | string;
+    height?: number | `${number}`;
+    width?: number | `${number}`;
     alt?: string;
     className?: string;
     link?: string; // optional link URL
