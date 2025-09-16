@@ -1,14 +1,19 @@
 .button {
     background-color: var(--lemon);
-    padding: 5px 40px;
+    padding: 0.5rem 2rem;
     border: 1px solid var(--off-black);
     border-radius: 15px;
     display: inline-block;
-    font-size: 12px;
-
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.4;
+    letter-spacing: var(--letter-spacing-wide);
+    text-decoration: none;
+    color: var(--off-black);
+    transition: all 0.3s ease;
 }
 
-.button:active, .button:hover {
+.button:active,
+.button:hover {
     background-color: var(--light-blue);
 }
-

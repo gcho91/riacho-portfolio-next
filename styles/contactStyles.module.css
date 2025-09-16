@@ -4,8 +4,11 @@
 
 .pageTitle {
     text-align: center;
-    font-family: var(--inter);
-    font-size: 2em;
+    font-size: var(--text-3xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    margin-bottom: 1rem;
 }
 
 .textContainer {
@@ -15,5 +18,8 @@
 }
 
 .text {
-    font-size: 1.5em;
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-relaxed);
+    color: var(--off-black);
 }

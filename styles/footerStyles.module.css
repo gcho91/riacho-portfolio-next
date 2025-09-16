@@ -24,15 +24,19 @@
 
 .name {
     margin: 0;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
 }
 
 .tagline {
     margin: 0;
     opacity: 0.9;
-    line-height: 1.7;
-    font-size: 16px;
+    line-height: var(--line-height-relaxed);
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-spacing-normal);
 }
 
 .socials {
@@ -60,7 +64,10 @@
 
 .copyright {
     margin: 0;
-    font-size: 12px;
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.4;
+    letter-spacing: var(--letter-spacing-wide);
     opacity: 0.7;
 }
 

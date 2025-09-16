@@ -61,38 +61,43 @@
 
 /* Typography */
 .greeting {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: var(--display-md);
+    font-weight: var(--font-weight-semibold);
     margin: 0 0 0.5rem 0;
-    color: #000;
-    line-height: 1.1;
+    color: var(--off-black);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
 }
 
 .profession {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: var(--display-md);
+    font-weight: var(--font-weight-semibold);
     margin: 0 0 0.5rem 0;
     background: linear-gradient(90deg, #EFDF80 0%, #C0DCDC 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    line-height: 1.1;
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
 }
 
 .location {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: var(--display-md);
+    font-weight: var(--font-weight-semibold);
     margin: 0 0 2rem 0;
-    color: #000;
-    line-height: 1.1;
+    color: var(--off-black);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
 }
 
 .description {
-    font-size: 1.2rem;
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-regular);
     margin: 0 0 2.5rem 0;
     max-width: 500px;
-    line-height: 1.6;
-    color: #000;
+    line-height: var(--line-height-relaxed);
+    color: var(--off-black);
+    letter-spacing: var(--letter-spacing-normal);
 }
 
 /* Button Group */
@@ -104,35 +109,39 @@
 
 .contactButton {
     background: white;
-    border: 1px solid #000;
+    border: 1px solid var(--off-black);
     border-radius: 20px;
     padding: 0.75rem 1.5rem;
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: #000;
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--off-black);
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: var(--letter-spacing-wide);
+    line-height: var(--line-height-normal);
 }
 
 .contactButton:hover {
-    background: #000;
+    background: var(--off-black);
     color: white;
 }
 
 .workButton {
-    background: #EFDF80;
+    background: var(--lemon);
     border: none;
     border-radius: 20px;
     padding: 0.75rem 1.5rem;
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: #000;
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--off-black);
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: var(--letter-spacing-wide);
+    line-height: var(--line-height-normal);
 }
 
 .workButton:hover {
@@ -176,7 +185,7 @@
     .greeting,
     .profession,
     .location {
-        font-size: 3rem;
+        font-size: var(--display-md);
     }
 
     .profileImageContainer {
@@ -203,11 +212,11 @@
     .greeting,
     .profession,
     .location {
-        font-size: 2.5rem;
+        font-size: var(--display-sm);
     }
 
     .description {
-        font-size: 1.1rem;
+        font-size: var(--text-lg);
         max-width: 100%;
     }
 
@@ -229,11 +238,11 @@
     .greeting,
     .profession,
     .location {
-        font-size: 2rem;
+        font-size: var(--text-4xl);
     }
 
     .description {
-        font-size: 1rem;
+        font-size: var(--text-base);
     }
 
     .profileImageContainer {
@@ -244,7 +253,7 @@
     .contactButton,
     .workButton {
         padding: 0.625rem 1.25rem;
-        font-size: 0.75rem;
+        font-size: var(--text-xs);
     }
 
     .profileIcon {
