@@ -3,7 +3,6 @@ import styles from "../styles/components/cardStyles.module.css"
 import { PortfolioItem } from "@/pages/work"
 import Tag from "./Tag"
 import Image from "next/image"
-import { cormorantGaramond } from "@/utils/fonts"
 import SvgIcon from "./SvgIcon"
 
 interface CardProps {
@@ -23,7 +22,7 @@ export default function Card(props: CardProps) {
                     return (<Tag key={i}>{tag}</Tag>)
                 })}
             </div>
-            <h2 className={`${styles.cardh2} ${cormorantGaramond.className}`}>{item.title}</h2>
+            <h3 className={styles.cardh3}>{item.title}</h3>
             <p className={styles.p}>{item.desc}</p>
         </div>
 

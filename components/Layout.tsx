@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
-import { dmSans, cormorantGaramond } from "@/utils/fonts";
-
-
+import Footer from "@/components/Footer";
+import { inter } from "@/utils/fonts";
 
 type LayoutProps = {
     children: React.ReactNode;
@@ -9,9 +8,10 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
     return (
-        <div className={cormorantGaramond.className}>
+        <div className={inter.className}>
             <Navbar />
             <main>{children}</main>
+            <Footer />
         </div>
     )
 }

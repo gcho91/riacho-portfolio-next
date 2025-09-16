@@ -6,7 +6,8 @@ import gmarketMock from "../public/gmarket-mock.png"
 import lynnsMock from "../public/lynns-mock.png"
 import wrexxmock from "../public/wrexx-mockup-s.png"
 import Card from '@/components/Card'
-import { } from "@/utils/fonts"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 
 export interface PortfolioItem {
     imageUrl: StaticImageData
@@ -77,7 +78,11 @@ const portfolioItems: PortfolioItem[] = [
 ]
 export default function Portfolio() {
     return <div id="work">
-        <h2 className={workStyles.pageTitle}>Projects</h2>
+        <h2 className={workStyles.pageTitle}>
+            <FontAwesomeIcon icon={faFolderOpen} style={{ marginRight: '8px' }} />
+            Projects
+        </h2>
+        <p className={workStyles.tagLine}>Some projects I&apos;ve worked on as a front-end developer</p>
         <div className={workStyles.portfolioContainer}>
 
             {portfolioItems.map(item => {

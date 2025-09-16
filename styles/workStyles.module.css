@@ -1,6 +1,11 @@
 .pageTitle {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+
+.tagLine {
+    text-align: center;
 }
 
 .portfolioContainer {
