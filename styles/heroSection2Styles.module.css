@@ -79,6 +79,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .contactButton:hover {
@@ -97,6 +98,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .workButton:hover {

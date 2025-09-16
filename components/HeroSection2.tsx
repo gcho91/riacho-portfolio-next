@@ -21,8 +21,8 @@ export default function HeroSection2() {
 
                     {/* Button group */}
                     <div className={heroSection2Styles.buttonGroup}>
-                        <button className={heroSection2Styles.contactButton}>CONTACT ME</button>
-                        <button className={heroSection2Styles.workButton}>VIEW MY WORK</button>
+                        <a href="mailto:your-email@example.com" className={heroSection2Styles.contactButton}>CONTACT ME</a>
+                        <a href="#work" className={heroSection2Styles.workButton}>VIEW MY WORK</a>
                     </div>
                 </div>
 

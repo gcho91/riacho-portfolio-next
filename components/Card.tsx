@@ -22,7 +22,7 @@ export default function Card(props: CardProps) {
                     return (<Tag key={i}>{tag}</Tag>)
                 })}
             </div>
-            <h2 className={styles.cardh2}>{item.title}</h2>
+            <h3 className={styles.cardh3}>{item.title}</h3>
             <p className={styles.p}>{item.desc}</p>
         </div>
 

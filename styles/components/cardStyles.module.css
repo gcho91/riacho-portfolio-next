@@ -64,8 +64,13 @@
     flex-wrap: wrap;
 }
 
-.cardh2 {
+.cardh3 {
     margin: 0;
+    font-weight: 400;
     /* min-height: 62px; */
     /* font-size: 1.75em; */
+}
+
+.p {
+    /* font-weight: 300; */
 }
