@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface SvgIconProps {
     src: string; // path to svg in public folder, e.g. "/github-icon.svg"
@@ -13,7 +14,7 @@ interface SvgIconProps {
 
 const SvgIcon: React.FC<SvgIconProps> = ({ src, height = 24, width = 24, alt = "icon", className, link, linkTarget = "_blank", linkRel = "noopener noreferrer" }) => {
     const icon = (
-        <img
+        <Image
             src={src}
             height={height}
             width={width}

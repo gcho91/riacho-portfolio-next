@@ -14,7 +14,7 @@ export default function HeroSection() {
             <div className={heroStyles["hero-content"]}>
                 <div className={heroStyles["hero-text"]}>
                     <h1 className={[...classes, heroStyles.greeting, heroStyles.delay1].join(" ")}>
-                        Hello, I'm Ria Cho,
+                        Hello, I&apos;m Ria Cho,
                     </h1>
                     <h1 className={[...classes, heroStyles.profession, heroStyles.delay2].join(" ")}>
                         Software Engineer

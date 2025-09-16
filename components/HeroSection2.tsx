@@ -10,7 +10,7 @@ export default function HeroSection2() {
 
 
                     {/* Three-line heading */}
-                    <h1 className={heroSection2Styles.greeting}>Hello, I'm Ria,</h1>
+                    <h1 className={heroSection2Styles.greeting}>Hello, I&apos;m Ria,</h1>
                     <h1 className={heroSection2Styles.profession}>Software Engineer</h1>
                     <h1 className={heroSection2Styles.location}>based in the USA.</h1>
 

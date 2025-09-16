@@ -1,4 +1,5 @@
 import styles from "@/styles/footerStyles.module.css";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -17,7 +18,7 @@ export default function Footer() {
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
                         >
-                            <img src="/linkedin-icon.svg" height={24} width={24} alt="LinkedIn" />
+                            <Image src="/linkedin-icon.svg" height={24} width={24} alt="LinkedIn" />
                         </a>
                         <a
                             className={styles.iconLink}
@@ -26,7 +27,7 @@ export default function Footer() {
                             rel="noopener noreferrer"
                             aria-label="GitHub"
                         >
-                            <img src="/github-mark.svg" height={24} width={24} alt="GitHub" />
+                            <Image src="/github-mark.svg" height={24} width={24} alt="GitHub" />
                         </a>
                         <a
                             className={styles.iconLink}
@@ -35,7 +36,7 @@ export default function Footer() {
                             rel="noopener noreferrer"
                             aria-label="Twitter"
                         >
-                            <img src="/twitter-icon.svg" height={24} width={24} alt="Twitter" />
+                            <Image src="/twitter-icon.svg" height={24} width={24} alt="Twitter" />
                         </a>
                     </div>
                     <a

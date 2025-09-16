@@ -82,7 +82,7 @@ export default function Portfolio() {
             <FontAwesomeIcon icon={faFolderOpen} style={{ marginRight: '8px' }} />
             Projects
         </h2>
-        <p className={workStyles.tagLine}>Some projects I've worked on as a front-end developer</p>
+        <p className={workStyles.tagLine}>Some projects I&apos;ve worked on as a front-end developer</p>
         <div className={workStyles.portfolioContainer}>
 
             {portfolioItems.map(item => {
