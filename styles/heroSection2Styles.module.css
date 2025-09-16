@@ -1,0 +1,224 @@
+/* Hero Container */
+.heroContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: white;
+}
+
+.heroContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 4rem;
+}
+
+/* Text Content */
+.heroText {
+    flex: 1;
+    max-width: 600px;
+}
+
+
+
+/* Typography */
+.greeting {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: #000;
+    line-height: 1.1;
+}
+
+.profession {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    background: linear-gradient(90deg, #EFDF80 0%, #C0DCDC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+}
+
+.location {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
+    color: #000;
+    line-height: 1.1;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin: 0 0 2.5rem 0;
+    max-width: 500px;
+    line-height: 1.6;
+    color: #000;
+}
+
+/* Button Group */
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contactButton {
+    background: white;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.contactButton:hover {
+    background: #000;
+    color: white;
+}
+
+.workButton {
+    background: #EFDF80;
+    border: none;
+    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.workButton:hover {
+    background: #E6D170;
+    transform: translateY(-2px);
+}
+
+/* Image Section */
+.heroImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.profileImageContainer {
+    width: 415px;
+    height: 415px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #C2DEE5 0%, #C0DCDC 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .heroContent {
+        gap: 3rem;
+    }
+
+    .greeting,
+    .profession,
+    .location {
+        font-size: 3rem;
+    }
+
+    .profileImageContainer {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroContainer {
+        padding: 1rem;
+    }
+
+    .heroContent {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .heroText {
+        max-width: 100%;
+    }
+
+    .greeting,
+    .profession,
+    .location {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    .profileImageContainer {
+        width: 300px;
+        height: 300px;
+    }
+
+    .buttonGroup {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heroContainer {
+        padding: 0.5rem;
+    }
+
+    .greeting,
+    .profession,
+    .location {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .profileImageContainer {
+        width: 250px;
+        height: 250px;
+    }
+
+    .contactButton,
+    .workButton {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.75rem;
+    }
+
+    .profileIcon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1.5rem;
+    }
+
+    .iconLetter {
+        font-size: 1.25rem;
+    }
+}

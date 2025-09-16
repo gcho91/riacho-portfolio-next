@@ -8,10 +8,11 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <HeroSection2 />
       <Portfolio />
-      <Contact />
-      <Footer />
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </>
   )
 }

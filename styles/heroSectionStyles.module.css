@@ -8,39 +8,142 @@
 
 .hero-container {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
 
-.hero {
+.hero-content {
     display: flex;
-    -webkit-box-pack: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 60px;
+    flex: 1;
+}
+
+.hero-text {
+    flex: 2;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
     justify-content: center;
-    -webkit-box-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    height: calc(100vh - 120px);
-    padding: 15px;
-    max-width: 700px;
-    margin: 0 auto;
+    align-items: center;
+    max-width: 400px;
+}
+
+.profile-image-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #C2DEE5 0%, #C0DCDC 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #C2DEE5 0%, #C0DCDC 100%);
+    color: var(--off-black);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Profile image styles - when you add your actual image */
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .header-section {
     padding: 10px 20px;
 }
 
-.subtext {
-    font-size: 2em;
-    font-weight: 100;
+.greeting {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: var(--off-black);
+}
+
+.profession {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    background: linear-gradient(90deg, #EFDF80 0%, #C0DCDC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.location {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    color: var(--off-black);
 }
 
 .description {
-    font-size: 1.5em;
-    margin-top: 5px;
-    max-width: 650px;
+    font-size: 1.2rem;
+    margin: 0 0 40px 0;
+    max-width: 500px;
+    line-height: 1.6;
+    color: var(--off-black);
 }
 
-.name {
-    font-size: 4rem;
-    margin: 0;
+.button-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    background: white;
+    border: 2px solid var(--off-black);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--off-black);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background: var(--off-black);
+    color: white;
+}
+
+.work-button {
+    background: var(--lemon);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--off-black);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.work-button:hover {
+    background: #E6D170;
+    transform: translateY(-2px);
 }
 
 
@@ -70,8 +173,77 @@
     color: #C2DEE5;
 }
 
-/* media query - navbar -list style */
-@media screen and (min-width: 600px) {}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .greeting {
+        font-size: 2.5rem;
+    }
+
+    .profession {
+        font-size: 2rem;
+    }
+
+    .location {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    .profile-image-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-container {
+        padding: 0 15px;
+    }
+
+    .greeting {
+        font-size: 2rem;
+    }
+
+    .profession {
+        font-size: 1.5rem;
+    }
+
+    .location {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .profile-image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact-button,
+    .work-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}
 
 .social-row {
     display: flex;
