@@ -21,7 +21,7 @@ export default function HeroSection2() {
 
                     {/* Button group */}
                     <div className={`${heroSection2Styles.buttonGroup} ${heroSection2Styles.fadeInUp} ${heroSection2Styles.delay5}`}>
-                        <a href="mailto:your-email@example.com" className={heroSection2Styles.contactButton}>CONTACT ME</a>
+                        <a href="mailto:riavcho@gmail.com" className={heroSection2Styles.contactButton}>CONTACT ME</a>
                         <a href="#work" className={heroSection2Styles.workButton}>VIEW MY WORK</a>
                     </div>
                 </div>
