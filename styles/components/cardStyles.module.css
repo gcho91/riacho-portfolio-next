@@ -2,6 +2,7 @@
     text-decoration: none;
     color: inherit;
     display: block;
+    flex: 1;
 }
 
 .container {

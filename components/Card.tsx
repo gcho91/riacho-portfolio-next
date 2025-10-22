@@ -12,21 +12,23 @@ interface CardProps {
 
 export default function Card(props: CardProps) {
     const { item } = props;
-    return <Link href={`/portfolio/${item.id}`} className={styles.cardLink}>
+    return (
         <div className={styles.container}>
-            <div className={styles.image} style={{ position: "relative" }}>
-                <Image src={item.imageUrl.src} className={styles.image} alt="Picture of web/mobile app" fill />
-            </div>
-
-            <div className={styles.cardDetails}>
-                <div className={styles.tagContainer}>
-                    {item.tags && item.tags.map((tag, i) => {
-                        return (<Tag key={i}>{tag}</Tag>)
-                    })}
+            <Link href={`/portfolio/${item.id}`} className={styles.cardLink}>
+                <div className={styles.image} style={{ position: "relative" }}>
+                    <Image src={item.imageUrl.src} className={styles.image} alt="Picture of web/mobile app" fill />
                 </div>
-                <h3 className={styles.cardh3}>{item.title}</h3>
-                <p className={styles.p}>{item.desc}</p>
-            </div>
+
+                <div className={styles.cardDetails}>
+                    <div className={styles.tagContainer}>
+                        {item.tags && item.tags.map((tag, i) => {
+                            return (<Tag key={i}>{tag}</Tag>)
+                        })}
+                    </div>
+                    <h3 className={styles.cardh3}>{item.title}</h3>
+                    <p className={styles.p}>{item.desc}</p>
+                </div>
+            </Link>
 
             <div className={styles.iconsContainer}>
                 {item.links?.github && (
@@ -36,7 +38,6 @@ export default function Card(props: CardProps) {
                         rel="noopener noreferrer"
                         aria-label="GitHub repository"
                         style={{ display: "inline-flex", alignItems: "center", gap: "0.5em" }}
-                        onClick={(e) => e.stopPropagation()}
                     >
                         <SvgIcon src="/github-icon.svg" height={30} width={30} alt="GitHub icon" />
                     </a>
@@ -48,15 +49,11 @@ export default function Card(props: CardProps) {
                         rel="noopener noreferrer"
                         aria-label="Live project"
                         style={{ display: "inline-flex", alignItems: "center", gap: "0.5em" }}
-                        onClick={(e) => e.stopPropagation()}
                     >
                         <SvgIcon src="/link-icon.svg" height={30} width={30} alt="Live project icon" />
                     </a>
                 )}
-
             </div>
-
-
         </div>
-    </Link>
+    )
 }
