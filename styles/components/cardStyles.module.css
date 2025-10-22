@@ -1,9 +1,15 @@
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .container {
     /* border: 1px solid gray; */
     /* border-radius: 0px; */
     display: flex;
     flex-direction: column;
-
+    cursor: pointer;
 
     box-shadow: 16px 18px -6px rgba(0, 0, 0, .08);
     -webkit-box-shadow: 1px 16px 18px -6px rgba(0, 0, 0, .08);
