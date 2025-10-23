@@ -13,7 +13,7 @@ import nycxdesign4 from "../public/IMG_0518.jpg";
 
 
 export type Tags = "React" | "React-Native" | "HTML/CSS" | "TypeScript" | "WordPress" | "Squarespace" | "Angular" | "PostgreSQL" | "Design" | "Figma"
-export type MarketingTags = "Brand Strategy" | "Content Marketing" | "Social Media" | "Email Marketing" | "SEO" | "Analytics" | "Campaign Management" | "Creative Direction" | "Copywriting" | "Visual Design"
+export type MarketingTags = "Brand Strategy" | "Content Marketing" | "Social Media" | "Email Marketing" | "SEO" | "Analytics" | "Campaign Management" | "Creative Direction" | "Copywriting" | "Visual Design" | "Web Development"
 
 export interface CaseStudy {
     title: string;
