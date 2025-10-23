@@ -11,12 +11,12 @@ export default function HeroSection2() {
 
                     {/* Three-line heading */}
                     <h1 className={`${heroSection2Styles.greeting} ${heroSection2Styles.fadeInUp} ${heroSection2Styles.delay1}`}>Hello, I&apos;m Ria,</h1>
-                    <h1 className={`${heroSection2Styles.profession} ${heroSection2Styles.fadeInUp} ${heroSection2Styles.delay2}`}>Software Engineer</h1>
+                    <h1 className={`${heroSection2Styles.profession} ${heroSection2Styles.fadeInUp} ${heroSection2Styles.delay2}`}>Developer & Marketer</h1>
                     <h1 className={`${heroSection2Styles.location} ${heroSection2Styles.fadeInUp} ${heroSection2Styles.delay3}`}>based in the USA.</h1>
 
                     {/* Description */}
                     <p className={`${heroSection2Styles.description} ${heroSection2Styles.fadeInUp} ${heroSection2Styles.delay4}`}>
-                        I am a front-end software engineer crafting user-centered products with high empathy and usability.
+                        I create marketing campaigns that perform. With a developer's analytical mindset and a marketer's creative vision, I bridge the gap between strategy and execution.
                     </p>
 
                     {/* Button group */}
