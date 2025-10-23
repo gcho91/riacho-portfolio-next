@@ -16,7 +16,7 @@ export default function HeroSection2() {
 
                     {/* Description */}
                     <p className={`${heroSection2Styles.description} ${heroSection2Styles.fadeInUp} ${heroSection2Styles.delay4}`}>
-                        I create marketing campaigns that perform. With a developer's analytical mindset and a marketer's creative vision, I bridge the gap between strategy and execution.
+                        I create marketing campaigns that perform. With a developer&apos;s analytical mindset and a marketer&apos;s creative vision, I bridge the gap between strategy and execution.
                     </p>
 
                     {/* Button group */}
