@@ -15,7 +15,7 @@ export default function HeroSection() {
                         Hello, I&apos;m Ria Cho,
                     </h1>
                     <h1 className={heroStyles.profession}>
-                        Software Engineer
+                        Developer & Marketing Strategist
                     </h1>
                     <h1 className={heroStyles.location}>
                         based in the USA.
