@@ -4,8 +4,16 @@ import amaltheaMock from "../public/amalthea-mock.png"
 import gmarketMock from "../public/gmarket-mock.png"
 import lynnsMock from "../public/lynns-mock.png"
 import wrexxmock from "../public/wrexx-mockup-s.png"
+import nycxdesign from "../public/NYCxDESIGN_Logo.png"
+import nycxdesign1 from "../public/IMG_0512.jpg";
+import nycxdesign2 from "../public/IMG_0514.jpg";
+import nycxdesign3 from "../public/IMG_0516.jpg";
+import nycxdesign4 from "../public/IMG_0518.jpg";
+
+
 
 export type Tags = "React" | "React-Native" | "HTML/CSS" | "TypeScript" | "WordPress" | "Squarespace" | "Angular" | "PostgreSQL" | "Design" | "Figma"
+export type MarketingTags = "Brand Strategy" | "Content Marketing" | "Social Media" | "Email Marketing" | "SEO" | "Analytics" | "Campaign Management" | "Creative Direction" | "Copywriting" | "Visual Design"
 
 export interface CaseStudy {
     title: string;
@@ -32,6 +40,25 @@ export interface PortfolioItem {
     technologies?: string[];
     duration?: string;
     role?: string;
+}
+
+export interface MarketingProject {
+    id: string;
+    imageUrl: StaticImageData;
+    title: string;
+    desc: string;
+    tags?: MarketingTags[];
+    link?: string;
+    overview?: string;
+    challenges?: string[];
+    solutions?: string[];
+    strategies?: string[];
+    results?: string[];
+    duration?: string;
+    role?: string;
+    client?: string;
+    industry?: string;
+    instagramTakeovers?: StaticImageData[]
 }
 
 export const portfolioItems: PortfolioItem[] = [
@@ -206,7 +233,7 @@ export const portfolioItems: PortfolioItem[] = [
             "Created comprehensive design system with consistent components",
             "Built interactive prototypes for user testing"
         ],
-        technologies: ["Figma", "Adobe Creative Suite", "Principle", "User Research"],
+        technologies: ["Figma", "Adobe Creative Suite", "User Research"],
         duration: "3 months",
         role: "UX/UI Designer",
         caseStudies: [
@@ -226,6 +253,94 @@ export const portfolioItems: PortfolioItem[] = [
     }
 ]
 
+export const marketingProjects: MarketingProject[] = [
+    {
+        id: "nycxdesign-social-campaign",
+        imageUrl: nycxdesign,
+        title: "NYCxDESIGN - Celebrating Design Across New York City",
+        desc: "Social media campaign for NYC's official design week, managing strategy, content scheduling, and influencer collaborations to highlight the city's design community.",
+        tags: ["Social Media", "Campaign Management", "Content Marketing", "Analytics"],
+        link: "https://www.nycxdesign.com/",
+        overview: "NYCxDESIGN is New York City's official design week, a city-wide initiative that promotes NYC as a global design destination and a creative hub. During my internship at NYCEDC, I supported the 2017 NYCxDESIGN campaign by managing social media strategy, content scheduling, and influencer collaborations to highlight the city's design community.",
+        challenges: [
+            "Maintain a consistent brand voice across social platforms",
+            "Highlight diverse local designers and creative events",
+            "Drive engagement and attendance through social storytelling",
+            "Manage collaboration logistics with event partners and influencers"
+        ],
+        solutions: [
+            "Built a detailed content calendar aligning NYCxDESIGN's official event schedule with key social moments",
+            "Coordinated Instagram Takeovers with partner brands and local artists",
+            "Collaborated directly with design studios and galleries to curate takeover content",
+            "Monitored engagement metrics across all NYCEDC social channels"
+        ],
+        strategies: [
+            "Strategic content planning prioritizing posts around in-person activations",
+            "Community & partner collaboration through Instagram Takeovers",
+            "Optimization & reporting with weekly performance summaries",
+            "SEO and Google AdWords Keyword Planner for discoverability"
+        ],
+        results: [
+            "+30% increase in Instagram engagement during NYCxDESIGN 2017",
+            "Strengthened collaborations with 20+ local designers and creative brands",
+            "Improved event visibility with consistently branded posts reaching tens of thousands",
+            "Delivered actionable insights that informed NYCEDC's future digital campaigns"
+        ],
+        instagramTakeovers: [
+            nycxdesign1,
+            nycxdesign2,
+            nycxdesign3,
+            nycxdesign4,
+
+        ],
+        duration: "October 2016 - June 2017",
+        role: "Social Media Associate (Internship)",
+        client: "NYC Economic Development Corporation (NYCEDC)",
+        industry: "Government/Design"
+    },
+    {
+        id: "amalthea-coffee-digital-presence",
+        imageUrl: amaltheaMock,
+        title: "Amalthea Coffee - Building a Digital Presence for a Local Brand",
+        desc: "End-to-end digital solution for family-owned coffee roastery, including website development, digital marketing framework, and training resources for independent management.",
+        tags: ["Brand Strategy", "Web Development", "Content Marketing", "Social Media"],
+        link: "https://amaltheacoffee.com/",
+        overview: "Amalthea Coffee is a family-owned coffee roastery and café in New Jersey. As a small business looking to expand its reach, Amalthea Coffee needed a strong digital foundation - from a maintainable website to clear marketing guidance for social media. I was brought on to develop their website, establish a digital marketing framework, and create easy-to-follow resources that empowered the owners to manage their online presence independently.",
+        challenges: [
+            "No existing website or centralized brand hub for customers",
+            "Limited technical expertise for ongoing maintenance",
+            "Need for a cohesive digital marketing strategy that was simple to manage in-house",
+            "Building an online presence that was cost-effective and maintainable"
+        ],
+        solutions: [
+            "Collaborated with a designer to create a visually appealing, responsive website using WordPress CMS",
+            "Created a custom step-by-step guide on how to update content and manage basic site edits",
+            "Conducted training sessions with the owners to demonstrate confident updates",
+            "Developed social media content guidelines outlining tone, posting frequency, and content themes"
+        ],
+        strategies: [
+            "Website development using WordPress for easy long-term maintenance",
+            "Documentation & training to ensure self-sufficiency",
+            "Digital marketing support with content guidelines and scheduling tools",
+            "Consistent brand voice and aesthetic across web and social presence"
+        ],
+        results: [
+            "Launched Amalthea Coffee's first official website, providing a professional digital home",
+            "Empowered the business owners with self-sufficiency through documentation and training",
+            "Established a consistent social media content framework maintainable without agency support",
+            "Improved local visibility and brand credibility through a cohesive digital identity"
+        ],
+        duration: "3 months",
+        role: "Digital Marketing & Web Development Consultant",
+        client: "Amalthea Coffee",
+        industry: "Food & Beverage"
+    }
+];
+
 export function getPortfolioItemById(id: string): PortfolioItem | undefined {
     return portfolioItems.find(item => item.id === id);
+}
+
+export function getMarketingProjectById(id: string): MarketingProject | undefined {
+    return marketingProjects.find(project => project.id === id);
 }

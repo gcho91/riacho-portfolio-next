@@ -11,6 +11,9 @@ export default function Navbar() {
                 <Link href="#work" className={navbarStyles.linktext}>Projects</Link>
             </li>
             <li>
+                <Link href="#marketing" className={navbarStyles.linktext}>Marketing</Link>
+            </li>
+            <li>
                 <Link href="#contact_section" className={navbarStyles.linktext}>Contact</Link>
             </li>
             <li className={navbarStyles.resumeLink}>
